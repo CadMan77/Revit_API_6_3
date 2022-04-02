@@ -1,0 +1,20 @@
+﻿<Window x:Class="Revit_API_6_3.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Revit_API_6_3"
+             mc:Ignorable="d" 
+             Height="200" Width="300" MinHeight="200" MinWidth="300"
+             Title="Расстановка элементов (линейная)"
+             WindowStartupLocation="CenterScreen">
+    <StackPanel Margin="5">
+        <Label Content="Тип семейства"/>
+        <ComboBox Margin="0,0,0,10" ItemsSource="{Binding ProjectFamilySymbols}" SelectedValue="{Binding SelectedFamilySymbol}" DisplayMemberPath="Name"/>
+
+        <Label Content="Число элементов"/>
+        <TextBox Margin="0,0,0,20" Text="{Binding ELementQTY}"/>
+
+        <Button Content="  Применить  " Padding="2" HorizontalAlignment="Center" Command="{Binding ApplyCommand}"/>
+    </StackPanel>
+</Window>

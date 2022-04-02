@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Assembly>"C:\ProgramData\RevitAPITraining\Revit_API_6_3.dll"</Assembly>
+		<AddInId>FFC1BFBF-7F77-4485-8FCE-96267CD11514</AddInId>
+		<FullClassName>Revit_API_6_3.Main</FullClassName>
+		<VendorId>ADSK</VendorId>
+		<Text>RevitAPI 6-3 Расстановка (линейная) элементов точечных семейств</Text>
+	</AddIn>
+</RevitAddIns>
